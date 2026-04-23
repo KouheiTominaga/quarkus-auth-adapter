@@ -1,13 +1,12 @@
 package dev.aulait.qaa.qkref;
 
-import static dev.aulait.qaa.qkref.RestrictedController.*;
-
 import dev.aulait.qaa.api.ErrorResponse;
 import lombok.AllArgsConstructor;
 
 @AllArgsConstructor
 public class RestrictedClient {
 
+  private static final String BASE_PATH = "/restricted";
   private RestClient client;
 
   public String get() {
